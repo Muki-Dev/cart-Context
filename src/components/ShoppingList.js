@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
+import '../styles/styles.css';
 
 const ShoppingList = () => {
 	const { updateCart } = useContext(CartContext);
@@ -9,9 +10,9 @@ const ShoppingList = () => {
 	};
 
 	return(
-			<div>
+			<div className='container'>
 				<h2>Shopping List</h2>
-				<button onClick={() => handleAddToCart("plante 1")}>Ajouter Plante 1</button>
+				<button onClick={() => handleAddToCart("Monstera")}>Ajouter Une Plante</button>
 			</div>
 		)
 }
